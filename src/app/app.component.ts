@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+   photos = [
+      {
+        src: 'https://upload.wikimedia.org/wikipedia/commons/4/49/TOTVS_pos.jpg',
+        alt: 'TOTVS'
+      }
+   ]
 }
