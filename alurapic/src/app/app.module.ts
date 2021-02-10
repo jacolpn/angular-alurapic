@@ -4,6 +4,8 @@ import { AppComponent } from './app.component';
 
 import { PhootosModule } from './photos/photos.module';
 import { PhotoService } from './photos/photo/photo.service';
+import { AppRoutingModule } from './app-routing.module';
+import { ErrorsModule } from './errors/errors.module';
 
 @NgModule({
   declarations: [
@@ -11,7 +13,9 @@ import { PhotoService } from './photos/photo/photo.service';
   ],
   imports: [
     BrowserModule,
-    PhootosModule
+    PhootosModule,
+    ErrorsModule,
+    AppRoutingModule
   ],
   providers: [PhotoService],
   bootstrap: [AppComponent]
