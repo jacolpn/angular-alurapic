@@ -1,9 +1,14 @@
 # NodeJS
 [NodeJS version 8.9,4](https://chocolatey.org/packages/nodejs-lts/8.9.4)
 
+# API
+Start with `npm start`.
+
 # Alurapic
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.7.
+
+Start with `npm i` and `ng serve`.
 
 ## Development server
 
