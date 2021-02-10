@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { HttpClient } from '@angular/common/http';
+import { PhotoService } from './photos/photo/photo.service';
 
 @Component({
   selector: 'app-root',
@@ -8,14 +8,10 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-   photos = [
-      {
-        src: 'https://upload.wikimedia.org/wikipedia/commons/4/49/TOTVS_pos.jpg',
-        alt: 'TOTVS'
-      }
-   ]
+   photos: Object[] = [];
 
-  constructor(http: HttpClient) {
-    console.log(http);
+  constructor(photoService: PhotoService) {
+    photoService.listFromUser('flavio')
+      .subscribe(photos => this.photos = photos);
   }
 }

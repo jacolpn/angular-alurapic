@@ -28,3 +28,11 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Command's
+	• npm i -g @angular/cli@6.0.7
+	• npm install rxjs@6.0.0 --save
+	• ng serve --open (já abre o navegador)
+	• npm i bootstrap@4.1.1
+	• npm install --unsafe-perm -g sqlite3
+    • npm install --global --production windows-build-tools
