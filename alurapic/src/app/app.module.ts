@@ -6,6 +6,7 @@ import { PhootosModule } from './photos/photos.module';
 import { PhotoService } from './photos/photo/photo.service';
 import { AppRoutingModule } from './app-routing.module';
 import { ErrorsModule } from './errors/errors.module';
+import { HomeModule } from './home/home.module';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ErrorsModule } from './errors/errors.module';
     BrowserModule,
     PhootosModule,
     ErrorsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HomeModule
   ],
   providers: [PhotoService],
   bootstrap: [AppComponent]
