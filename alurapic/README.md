@@ -42,3 +42,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 	• npm install --unsafe-perm -g sqlite3
     • npm install --global --production windows-build-tools
 	• npm i font-awesome@4.7.0
+	• npm install jwt-decode@2.2.0
