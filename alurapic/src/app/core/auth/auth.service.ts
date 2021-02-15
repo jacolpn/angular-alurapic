@@ -9,7 +9,6 @@ const API_URL = 'http://localhost:3000';
   providedIn: 'root'
 })
 export class AuthService {
-
   constructor(
     private http: HttpClient,
     private userService: UserServico
