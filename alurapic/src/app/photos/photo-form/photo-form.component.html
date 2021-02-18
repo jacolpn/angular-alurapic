@@ -1,7 +1,11 @@
 <div class="container">
-  <form [formGroup]="photoForm" class="row">
+  <form
+    (submit)="upload()"
+    [formGroup]="photoForm"
+    class="row">
     <div class="col-md-6 text-center">
       <input
+        (change)="file = $event.target.files[0]"
         formControlName="file"
         type="file"
         accept="image/*">
