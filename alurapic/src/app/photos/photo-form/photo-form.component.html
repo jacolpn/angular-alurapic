@@ -8,6 +8,7 @@
         class="form-group"
         *ngIf="!preview; else previewImage">
         <button
+          immediateClick
           type="button"
           (click)="fileInput.click()"
           class="btn btn-primary">
