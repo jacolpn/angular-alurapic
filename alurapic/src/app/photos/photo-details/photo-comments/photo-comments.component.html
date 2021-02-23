@@ -14,15 +14,25 @@
     </ul>
 
     <div class="mt-4">
-        <form>
+        <form [formGroup]="commentForm">
             <div class="input-group">
-            <textarea class="form-control"></textarea>
-            <div class="input-group-append">
-                <button class="btn btn-primary pull-left">
-                    Publish
-                </button>
+                <textarea
+                    class="form-control"
+                    formControlName="comment">
+                </textarea>
+                <div class="input-group-append">
+                    <button
+                        type="submit"
+                        class="btn btn-primary pull-left"
+                        [disabled]="commentForm.invalid">
+                        Publish
+                    </button>
+                </div>
             </div>
-            </div>
+            <ap-vmessage 
+                text="Maximun size allowed is 300" 
+                *ngIf="commentForm.get('comment').errors?.maxlength">
+            </ap-vmessage>
         </form>
     </div>
 <div>
